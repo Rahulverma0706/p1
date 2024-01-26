@@ -1391,11 +1391,12 @@ object-fit: cover;
   display: block;
 }
 #bar{
-  width: 70%;
+  width: 75%;
   padding: 3px;
   padding-right: 5px;
   padding-left: 5px;
   background-color:#525151;
+  
 }
 #bar input{
   width: 84%;
@@ -1410,6 +1411,13 @@ object-fit: cover;
   width: 50px;
   position: relative;
   top: 11px;
-  left: 50px;
+  left: 30px;
+  
+}
+#login{
+  width: 3.5%;
+  margin-left: 100px;
+  position: relative;
+  top: 200  px;
 }
 
