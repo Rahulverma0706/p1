@@ -38,30 +38,27 @@ if (event.target == preferencesBox) {
 });
 });
 
-
 // -------------------------------Local Storage---------------------------//
 
+let loginBtn = document.querySelector("#login");
+let loginData = {
+    id : "rahulverma",
+    pass : "pass@123"
+  }
+  function storeData(){
+    localStorage.setItem("userLoginData", JSON.stringify(loginData))
+}
+function loadData(){
+    JSON.parse(localStorage.getItem("userLoginData", (loginData)));
+}
 
-let loginBtn = document.querySelector("#login")
 loginBtn.addEventListener("click", function(){
-    let loginData = {
-        id : "rahulverma",
-        pass : "pass@123"
-      }
-      
-    // localStorage.setItem("loginData", JSON.stringify(loginData));
-    
-    
     let loginid  = document.querySelector("#userid").value;
     let loginpass = document.querySelector("#userpass").value;
-    
-    
-   
-
     if(loginid == loginData.id && loginpass == loginData.pass){
-        alert("Welcome! You logged in")
+        alert("Welcome! You logged in");
     }else{
-        alert("Wrong Credentials")
+        alert("Wrong Credentials"); 
     }
 })
 

@@ -6,6 +6,20 @@
     
   }
 
+  #logindiv{
+    width: 80%;
+    background-color: grey;
+    margin: auto;
+    
+    
+  }
+  #logindiv input{
+    width: 60%;
+    margin: 3.5%;
+    padding: 20px;
+  }
+  
+
 
   .social-icons {
     display: flex;
